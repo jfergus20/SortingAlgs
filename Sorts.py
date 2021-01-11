@@ -9,7 +9,7 @@ class Sorts:
         A[i], A[j] = A[j], A[i]
         return A
 
-    #SELECTIONSORT -- COMPLETE
+    #SELECTIONSORT
     def SelectionSort(self, A):
         """
         for i <- 0 to A.length-1:
@@ -29,7 +29,7 @@ class Sorts:
             #A[i], A[min_pos] = A[min_pos], A[i]
         return A
     
-    #INSERTIONSORT -- COMPLETE
+    #INSERTIONSORT
     def InsertionSort(self, A):
         """
         for i<-1 to A.length
@@ -49,7 +49,7 @@ class Sorts:
             A[j+1] = key
         return A
     
-    #MERGESORT -- COMPLETE
+    #MERGESORT
     def MergeSort(self, A):
         """
         if(h<=lo) return
@@ -91,7 +91,7 @@ class Sorts:
                 k += 1
         return A
     
-    #QUICKSORT HELPER -- COMPLETE
+    #QUICKSORT HELPER
     def Partition(self, A, lo, hi, r):
         #Quicksort Helper
         #Partition A[lo..hi] arond elt in pos r
@@ -112,7 +112,7 @@ class Sorts:
         A = self.SwapPositions(A, lo, j)
         return j
 
-    #QUICKSORT -- COMPLETE
+    #QUICKSORT
     def QuickSort(self, A, lo, hi):
         """
         if(hi>lo)
